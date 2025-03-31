@@ -1,0 +1,31 @@
+{
+  "name": "React Development Container",
+  "dockerFile": "Dockerfile",
+  "context": ".",
+  "appPort": [
+    5173
+  ],
+  "customizations": {
+    "jetbrains": {
+      "settings": {
+        "com.intellij:app:HttpConfigurable.use_proxy_pac": true
+      }
+    },
+    "vscode": {
+      "settings": {
+        "eslint.enable": true,
+        "prettier.enable": true
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
+  "runArgs": [
+    "--init",
+    "false"
+  ]
+}
