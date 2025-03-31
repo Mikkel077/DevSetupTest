@@ -5,13 +5,13 @@ FROM node:22
 WORKDIR /app
 
 # Copy package.json and package-lock.json
-COPY DevSetupTest/WebClient/Frontend/package*.json ./
+COPY WebClient/Frontend/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the rest of the app
-COPY DevSetupTest/WebClient/Frontend /app
+COPY WebClient/Frontend /app
 
 # Expose the port that the app will run on
 EXPOSE 5173
