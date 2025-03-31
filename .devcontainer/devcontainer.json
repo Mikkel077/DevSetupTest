@@ -24,4 +24,7 @@
   },
   "postCreateCommand": "cd WebClient/Frontend && npm install",
   "remoteUser": "node",
+  "runArgs": [
+    "--init=false"
+  ]
 }
