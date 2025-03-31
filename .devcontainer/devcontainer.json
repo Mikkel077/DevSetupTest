@@ -1,7 +1,7 @@
 {
   "name": "React Development Container",
-  "dockerFile": "./Dockerfile",
-  "context": ".",
+  "dockerFile": "../Dockerfile",
+  "context": "..",
   "appPort": [
     5173
   ],
