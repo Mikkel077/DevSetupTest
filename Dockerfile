@@ -13,6 +13,12 @@ RUN npm install
 # Copy the rest of the app
 COPY WebClient/Frontend /app
 
+# Ensure proper ownership of the files
+RUN chown -R node:node /app
+
+# Set user to 'node' for running the app
+USER node
+
 # Expose the port that the app will run on
 EXPOSE 5173
 
